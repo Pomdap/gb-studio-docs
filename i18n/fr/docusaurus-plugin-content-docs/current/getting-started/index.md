@@ -2,24 +2,24 @@
 sidebar_position: 3
 ---
 
-# Getting Started
+# Pour commencer
 
-When you first open GB Studio you will see the _New Project_ window.
+Lorsque vous ouvrirez GB Studio pour la première fois, vous verrez la fenêtre _Nouveau projet_.
 
-<img title="New Project" src="/img/screenshots/new-project-v3.png" width="752" />
+<img title="Nouveau projet" src="/fr/img/screenshots/new-project-v3.png" width="752" />
 
 :::tip
 
-It's recommended to start by using the Sample Project template as it contains examples of lots of the functionality that GB Studio provides.
+Il est recommandé de commencer en utilisant le modèle _Exemple de projet_ car il contient un aperçu de nombreuses fonctionnalités fournies par GB Studio.
 
 :::
 
-If you have an existing project you can open it from here by clicking _Open_ and navigating to the `.gbsproj` file.
+Si vous avez déjà un projet existant, vous pouvez l'ouvrir à partir d'ici en cliquant sur _Ouvrir_ et en sélectionnant votre fichier `.gbsproj`.
 
-## New Project
+## Nouveau projet
 
-Give your project a name to get started (don't worry, you can change this later) and choose a project template. If you're new to GB Studio then I would recommend using the _Sample Project_ template which contains a few example scenes and scripts already set up so you can get a small idea of what's possible. Click _Create Project_ and you'll be taken to the _Project Editor_.
+Pour commencer, donnez un nom à votre projet (ne vous inquiétez pas, vous pourrez le modifier plus tard) et choisissez un modèle de projet. Si vous débutez avec GB Studio, je vous recommande d'utiliser le modèle _Exemple de projet_ qui contient quelques exemples de scènes et de scripts déjà configurés afin que vous puissiez avoir une petite idée de ce qui est possible. Cliquez sur _Créer projet_ et vous serez redirigé vers l'_Éditeur de projet_.
 
-<img title="Getting Started" src="/img/screenshots/getting-started-v3.png" width="1258" />
+<img title="Getting Started" src="/fr/img/screenshots/getting-started-v3.png" width="1258" />
 
-As soon as you see this screen you can click the _Play button_ in the top right which will build and run the project. After playing the sample project you can try clicking around the editor to see how the project is set up. Select one of the people or signposts and edit the their dialogue using the sidebar on the right then try running the project again, you've just made your very own version of the game! Don't worry if you break anything, you can always make a new project with the sample template later.
+Dès que vous voyez cet écran, vous pouvez cliquer sur le _Bouton Exécuter_ en haut à droite qui générera et exécutera le projet. Après avoir joué a l'exemple de projet, vous pouvez essayer de cliquer dans l'éditeur pour voir comment le projet est configuré. Sélectionnez l'un des personnages ou des panneaux et modifiez les dialogues à l'aide de la barre latérale à droite, puis essayez à nouveau d'exécuter le projet, vous venez de créer votre propre version du jeu ! Ne vous inquiétez pas si vous cassez quoi que ce soit, vous pourrez toujours créer un nouveau projet en partant du même modèle plus tard.
