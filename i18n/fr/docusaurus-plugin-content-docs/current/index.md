@@ -4,17 +4,17 @@ sidebar_position: 1
 
 # Introduction
 
-GB Studio is drag and drop game creator for making Game Boy games.
 
-It is designed to be usable by people with little to no previous programming knowledge using simple visual scripting but also provides multiple access points for advanced users to access the game engine's virtual machine (GBVM) and to directly modify game engine's C and Z80 assembly code through plugins.
+GB Studio est un outil visuel de création de jeux qui permet de développer des jeux Game Boy.
 
-You can generate ROM files that can be run in an emulator, on a web page or on real Game Boy hardware.
+Il est conçu pour être utilisable par des personnes ayant peu ou pas de connaissances préalables en programmation à l'aide de scripts visuels, mais fournit également plusieurs fonctionnalités avancées permettant aux utilisateurs d'accéder à la machine virtuelle du moteur de jeu (GBVM) et de modifier directement le code C et Z80 du moteur à l'aide de plugins.
 
-<img title="New Project" src="/img/screenshots/game-easy.png" width="592" />
+Vous pouvez générer des ROM qui peuvent être exécutées dans un émulateur, sur une page web ou sur une véritable Game Boy.
 
-## Download
+<img title="New Project" src="/fr/img/screenshots/game-easy.png" width="592" />
 
-You can get latest version of GB Studio from the
-[Itch.io download page](https://chrismaltby.itch.io/gb-studio) and older releases are archived on [GitHub](https://github.com/chrismaltby/gb-studio/releases).
+## Téléchargement
 
-This documentation is also [available in PDF format](/assets/pdf/www.gbstudio.dev-docs.pdf).
+Vous pouvez récupérer la dernière version de GB Studio sur la [page de téléchargement Itch.io](https://chrismaltby.itch.io/gb-studio), les anciennes versions sont archivées sur [GitHub](https://github.com/chrismaltby/gb-studio/releases).
+
+Cette documentation est aussi [disponible au format PDF](/assets/pdf/www.gbstudio.dev-docs.pdf).
