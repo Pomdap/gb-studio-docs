@@ -4,27 +4,27 @@ sidebar_position: 2
 
 # Installation
 
-Download your preferred version from the [Itch.io download page](https://chrismaltby.itch.io/gb-studio) or use [GitHub](https://github.com/chrismaltby/gb-studio/releases) for older releases.
+Téléchargez votre version préférée depuis la [page de téléchargement Itch.io](https://chrismaltby.itch.io/gb-studio) ou utilisez [GitHub](https://github.com/chrismaltby/gb-studio/releases) pour les versions plus anciennes.
 
 ## Windows
 
-Two versions of GB Studio are available for Windows. The _Squirrel Installer_ version just requires you to unzip, double click and then wait a few seconds while the application installs to your C:\ drive. Once installed a shortcut will be added to your desktop automatically and the application will start. The application will be installed to `%LocalAppData%\gb_studio`, if you need to install to a different location use the _Manual_ version.
+Deux versions de GB Studio sont disponibles pour Windows. La version _Squirrel Installer_ nécessite simplement que vous la décompressiez, de double-cliquer et d'attendre quelques secondes pendant que l'application s'installe sur votre lecteur C:\. Une fois installée, un raccourci sera automatiquement ajouté à votre bureau et l'application démarrera. L'application sera installée dans `%LocalAppData%\gb_studio`, si vous devez l'installer à un emplacement différent, utilisez la version _Manual_.
 
-The _Manual_ version is a zip containing the application files, you can unzip this to any location. Once unzipped double click `gb-studio.exe` to start.
+La version _Manual_ est un dossier zip contenant les fichiers de l'application, vous pouvez le décompresser à n'importe quel endroit. Une fois décompressé, double-cliquez sur `gb-studio.exe` pour démarrer l'application.
 
 ## macOS
 
-For macOS unzip the downloaded file and move `GB Studio.app` to your _Applications_ folder. Double click to start.
+Pour macOS, téléchargez et décompressez le dossier et déplacez `GB Studio.app` dans votre dossier _Applications_. Double-cliquez pour démarrer l'application.
 
-If you're having trouble building or running your game you may also need to install Apple's Command Line Tools by opening `Applications/Terminal.app` and entering the following command.
+Si vous rencontrez des difficultés durant la création ou lors de l'exécution de votre jeu, vous devrez peut-être installer les outils de ligne de commande d'Apple en ouvrant `Applications/Terminal.app` et en saisissant la commande ci-dessous.
 
 ```
 xcode-select --install
 ```
 
-## Ubuntu / Debian-based Linux
+## Ubuntu / Linux basé sur Debian
 
-For Debian-based Linux distros, download the .deb version and run the following commands (Tested on Ubuntu 18.10)
+Pour les distributions Linux basées sur Debian, téléchargez la version .deb et exécutez les commandes ci-dessous (Testé sur Ubuntu 18.10).
 
 ```
 > sudo apt-get update
@@ -33,14 +33,14 @@ For Debian-based Linux distros, download the .deb version and run the following 
 > gb-studio
 ```
 
-If you have issues with graphical glitches appearing on Ubuntu try running GB Studio using the following command.
+Si vous rencontrez des problèmes d'affichage sur Ubuntu, essayez d'exécuter GB Studio à l'aide de la commande ci-dessous.
 ```
 > gb-studio --disable-gpu
 ```
 
-## Fedora / RPM-based Linux
+## Fedora / Linux basé sur RPM
 
-For RPM-based Linux distros, download the .rpm version and run the following commands (Tested on Fedora 29)
+Pour les distributions Linux basées sur RPM, téléchargez la version .rpm et exécutez les commandes ci-dessous (Testé sur Fedora 29).
 
 ```
 > sudo yum install libXScrnSaver make lsb
