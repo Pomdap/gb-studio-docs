@@ -2,19 +2,19 @@
 sidebar_position: 4
 ---
 
-# Project Editor
+# Editeur de projet
 
-The default view for the _Project Editor_ as shown below is the _Game World_. This is where you can create your game by combining scenes, adding actors and triggers then building scripting events to add interactions.
+La vue par défaut de l’_Éditeur de projet_, comme indiqué ci-dessous, est le _Monde du jeu_. C’est ici que vous pouvez créer votre jeu en combinant des scènes, en ajoutant des acteurs et des déclencheurs, puis en scriptant des événements pour ajouter des interactions.
 
 <img title="The Project Editor" src="/img/screenshots/project-editor-v3.png" width="1258" />
 
-Use the _Editor Tools_ to switch between Select, Add, Erase, Collision, and Color Drawing modes.
+Utilisez les _Outils de l’éditeur_ pour basculer entre les modes Sélectionner, Ajouter, Gomme, Collisions et Coloriser.
 
-By default, your project's properties are shown in the _Editor Sidebar_ on the right. Here you can set the project name and choose the starting scene. This project view is also where initial values for the Player actor are set. See the page on [The Player](/docs/project-editor/player) for more information on the Player.
+Par défaut, les propriétés de votre projet sont affichées dans la _Barre latérale de l’éditeur_ à droite. Ici, vous pouvez définir le nom du projet et choisir la scène de départ. Cette vue de projet est également l’endroit où les valeurs initiales de l’acteur Player sont définies. Voir la page sur [le Player](/docs/project-editor/player) pour plus d’informations sur cet acteur.
 
-To look at project properties again from the _Editor Sidebar_, click on any empty space between scenes.
+Pour consulter à nouveau les propriétés du projet à partir de la _Barre latérale de l’éditeur_, cliquez sur n’importe quel espace vide entre les scènes.
 
-## Editor Tools
+## Outils de l’éditeur
 
 **Select tool:** Clicking any scenes, actors, or triggers will update the _Editor Sidebar_ to show the properties and scripts for the item you selected. You can switch back to the Project's properties by clicking outside of a scene.
 
