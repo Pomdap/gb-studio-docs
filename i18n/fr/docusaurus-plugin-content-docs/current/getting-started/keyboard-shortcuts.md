@@ -1,86 +1,85 @@
-# Keyboard Shortcuts
+# Raccourcis clavier
 
+## Fenêtre de jeu
 
-## Play Window
+Lorsque vous jouez à votre jeu depuis GB Studio, utilisez les touches suivantes :
 
-When playing your game inside GB Studio use the following keyboard controls:
-
-**Up** - `Up Arrow` / `W`  
-**Down** - `Down Arrow` / `S`  
-**Left** - `Left Arrow` / `A`  
-**Right** - `Right Arrow` / `D`  
+**Haut** - `Flèche vers le haut` / `W`  
+**Bas** - `Flèche vers le bas` / `S`  
+**Gauche** - `Flèche vers la gauche` / `A`  
+**Droite** - `Flèche vers la droite` / `D`  
 **A** - `Alt` / `Z` / `J`  
 **B** - `Ctrl` / `K` / `X`  
-**Start** - `Enter`  
-**Select** - `Shift`
+**Start** - `Entrée`  
+**Select** - `Maj`
 
-These controls can be modified at any time by going to the _Settings View_ under the _Controls_ section.
+Ces contrôles peuvent être modifiés à tout moment en accédant à la _Vue des paramètres_ sous la section _Contrôles_.
 
-You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
+Vous pouvez également contrôler la _Fenêtre de jeu_ à l'aide d'une manette prise en charge. Si votre navigateur Web prend en charge votre manette de jeu, vous pouvez également l'utiliser lors de l'exécution de la version Web.
 
-## Navigating The Menus
+## Naviguer dans les menus
 
-Much of the functionality of GB Studio is accessible through the menu bar and many of the menu items contain keyboard shortcut labels. Try clicking around on the menus to discover all of the shortcuts but the following are a few you should find useful:
+Une grande partie des fonctionnalités de GB Studio sont accessibles via la barre de menus de nombreux éléments de la barre de menus sont accessibles via des raccourcis clavier. Essayez de cliquer sur les menus pour découvrir tous les raccourcis, mais voici quelques-uns qui devraient vous être utiles :
 
-**Save Project** - `Ctrl/Cmd` + `S`  
-**Open Project** - `Ctrl/Cmd` + `O`  
-**Switch View Mode** - `Ctrl/Cmd` + `1-8`  
-**Run Game** - `Ctrl/Cmd` + `B`  
-**Export ROM file** - `Ctrl/Cmd` + `Shift` + `B`
+**Enregistrer le projet** - `Ctrl/Cmd` + `S`  
+**Ouvrir un projet** - `Ctrl/Cmd` + `O`  
+**Changer de mode d'affichage** - `Ctrl/Cmd` + `1-9`  
+**Excécuter le jeu** - `Ctrl/Cmd` + `B`  
+**Exporter en fichier ROM** - `Ctrl/Cmd` + `Maj` + `B`
 
-## Game World
+## Monde du jeu
 
-While editing the game world you can use the following keys to quickly manipulate your scenes.
+Dans le mode d'édition du monde du jeu, vous pouvez utiliser les touches suivantes pour manipuler rapidement vos scènes.
 
-**Select Mode** - `V`  
-**Add Actor** - `A`  
-**Add Trigger** - `T`  
-**Add Scene** - `S`  
-**Eraser Mode** - `E`  
-**Collisions Mode** - `C`  
-**Set Player Start Position** - `P` (while hovering over desired location)  
-**Pan View** - Hold `Space` (while clicking and dragging on _Game World_)
+**Mode sélectionner** - `V`  
+**Ajouter un Acteur** - `A`  
+**Ajouter un Déclencheur** - `T`  
+**Ajouter une Scène** - `S`  
+**Mode gomme** - `E`  
+**Mode collisions** - `C`  
+**Positionner la zone de départ du joueur** - `P` (tout en survolant l'emplacement souhaité)
+**Déplacement de vue** - Maintenir `Espace` (tout en cliquant et en faisant glisser le _Monde du jeu_)
 
-## Drawing Mode
+## Mode dessin
 
-Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize tool_.
+Le mode dessin est activé automatiquement durant l'utilisation de l'_Outil Collisions_ et l'_Outil Coloriser_.
 
-**Draw** - Click on scene  
-**Draw line from last point** - Click to set first point, hold `Shift`, click to set next point  
-**Lock brush to axis** - Hold `Shift` + Hold Click  
-**8px Brush** - `8`  
-**16px Brush** - `9`  
-**Fill** - `0`  
-**Hide Triggers/Actors** - `-`
+**Dessiner** - Cliquer sur la scène  
+**Dessiner une ligne à apartir du dernier point** - Cliquer pour poser le premier point, maintenir `Maj`, cliquer pour poser le denier point  
+**Bloquer la brosse sur l'axe** - Maitenir `Maj` + Maintenir le clic  
+**Brosse de 8px** - `8`  
+**Brosse de 16px** - `9`  
+**Remplir** - `0`  
+**Cacher les Déclencheurs/Acteurs** - `-`
 
-## Collision Types
+## Types de collisions
 
-These are only available when using the _Collision tool_.
+Ces commandes ne sont disponibles que lors de l'utilisation de l'_Outil Collisions_.
 
-Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not replace existing collision when placed on top of other colliders.
+Chaque tuile peut contenir au maximum 1 échelle et 3 collisions latérales. Les échelles ne remplacent pas les collisions existantes lorsqu'elles sont placées dessus.
 
-**Select multiple collision types** - `Shift` + Click  
-**Erase collision tile** - Click on a collision tile  
-**Solid** - `1`  
-**Collision Top** - `2`  
-**Collision Bottom** - `3`  
-**Collision Left** - `4`  
-**Collision Right** - `5`  
-**Ladder (Platformer only)** - `6`
+**Sélectionnez plusieurs types de collisions** - `Maj` + Clic  
+**Effacer une tuile de collision** - Cliquer sur la tuile  
+**Solide** - `1`  
+**Collision au dessus** - `2`  
+**Collision en dessous** - `3`  
+**Collision à gauche** - `4`  
+**Collision à droite** - `5`  
+**Échelle (Seulement pour le mode Plate-forme)** - `6`
 
-## Colorize Palettes
+## Coloriser les palettes
 
-These are only available when using the _Colorize tool_.
+Ces commandes ne sont disponibles que lors de l'utilisation de l'_Outil Coloriser_.
 
-**Change Brush Palette** - `1-6`  
-**Change Palettes** - Hold click on existing palette
+**Changer la palette du pinceau** - `1-6`  
+**Modifier une palette** - Maintenir le clic sur une palette existante
 
-## Music Editor
+## Éditeur de musique
 
-These are only available when using the _Music Editor_.
+Ces commandes ne sont disponibles que lors de l'utilisation de l'_Éditeur de musique_.
 
-**Save Song** - `Ctrl/Cmd` + `S`  
-**Play/Pause** - `Space`  
+**Enregistrer la musique** - `Ctrl/Cmd` + `S`  
+**Jouer/Pause** - `Espace`  
 **Play from position** - `Alt/Option` + `Space`  
 **Switch to Tracker/Piano Roll** - `` ` ``  
 
@@ -88,9 +87,9 @@ These are only available when using the _Music Editor_.
 
 **Navigate grid** - `Arrow Keys`  
 **Next Column** - `Tab`  
-**Previous Column** - `Shift` + `Tab`  
+**Previous Column** - `Maj` + `Tab`  
 
-**Cell Selection** - `Shift` + `Arrow Keys` *or* Click to set first cell, hold `Shift`, click to set next cell  
+**Cell Selection** - `Maj` + `Arrow Keys` *or* Click to set first cell, hold `Maj`, click to set next cell  
 **Select Column** - `Ctrl/Cmd` + `A`  
 **Select Pattern** - `Ctrl/Cmd` + `A`, `Ctrl/Cmd` + `A`   
 **Copy Selection** - `Ctrl/Cmd` + `C`  
@@ -99,18 +98,18 @@ These are only available when using the _Music Editor_.
 
 **Transpose Selection (small step up)** - `Ctrl` + `=` *or* `Ctrl` + `Scroll wheel`   
 **Transpose Selection (small step down)** - `Ctrl` + `-`   
-**Transpose Selection (big step up)** - `Ctrl` + `Shift` + `=` *or* `Ctrl` + `Shift` + `Q`  
-**Transpose Selection (big step down)** - `Ctrl` + `Shift` + `-` *or* `Ctrl` + `Shift` + `A`  
+**Transpose Selection (big step up)** - `Ctrl` + `Maj` + `=` *or* `Ctrl` + `Maj` + `Q`  
+**Transpose Selection (big step down)** - `Ctrl` + `Maj` + `-` *or* `Ctrl` + `Maj` + `A`  
 
 ### Piano roll
 
 **Change Instrument** - `1-9`  
-**Quick Select** - `Shift` + drag and drop mouse  
+**Quick Select** - `Maj` + drag and drop mouse  
 **Duplicate Selection** - `Alt/Option` (while moving selected notes)
 
 **Select Channel** - `Ctrl/Cmd` + `A`  
 **Copy Selection** - `Ctrl/Cmd` + `C`  
 **Paste Selection** - `Ctrl/Cmd` + `V`  
-**Paste and Replace Channel** - `Ctrl/Cmd` + `Shift` + `V`  
+**Paste and Replace Channel** - `Ctrl/Cmd` + `Maj` + `V`  
 **Delete Selection** - `Backspace/Delete`
 
