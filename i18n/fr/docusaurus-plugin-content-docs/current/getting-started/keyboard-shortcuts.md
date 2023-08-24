@@ -24,7 +24,7 @@ Une grande partie des fonctionnalités de GB Studio sont accessibles via la barr
 **Enregistrer le projet** - `Ctrl/Cmd` + `S`  
 **Ouvrir un projet** - `Ctrl/Cmd` + `O`  
 **Changer de mode d'affichage** - `Ctrl/Cmd` + `1-9`  
-**Excécuter le jeu** - `Ctrl/Cmd` + `B`  
+**Exécuter le jeu** - `Ctrl/Cmd` + `B`  
 **Exporter en fichier ROM** - `Ctrl/Cmd` + `Maj` + `B`
 
 ## Monde du jeu
@@ -45,8 +45,8 @@ Dans le mode d'édition du monde du jeu, vous pouvez utiliser les touches suivan
 Le mode dessin est activé automatiquement durant l'utilisation de l'_Outil Collisions_ et l'_Outil Coloriser_.
 
 **Dessiner** - Cliquer sur la scène  
-**Dessiner une ligne à apartir du dernier point** - Cliquer pour poser le premier point, maintenir `Maj`, cliquer pour poser le denier point  
-**Bloquer la brosse sur l'axe** - Maitenir `Maj` + Maintenir le clic  
+**Dessiner une ligne à partir du dernier point** - Cliquer pour poser le premier point, maintenir `Maj`, cliquer pour poser le dernier point  
+**Bloquer la brosse sur l'axe** - Maintenir `Maj` + Maintenir le clic  
 **Brosse de 8px** - `8`  
 **Brosse de 16px** - `9`  
 **Remplir** - `0`  
