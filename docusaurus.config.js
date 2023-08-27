@@ -9,16 +9,16 @@ const config = {
   title: "GB Studio",
   tagline:
     "A quick and easy to use drag and drop retro game creator for your favourite handheld video game system.",
-  url: "https://pomdap.github.io/gb-studio-docs/",
+  url: "https://pomdap.github.io/",
   trailingSlash: false,
-  baseUrl: "/",
+  baseUrl: "/gb-studio-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "chrismaltby", // Usually your GitHub org/user name.
+  organizationName: "pomdap", // Usually your GitHub org/user name.
   projectName: "gb-studio-docs", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
