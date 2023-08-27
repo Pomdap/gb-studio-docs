@@ -9,7 +9,8 @@ const config = {
   title: "GB Studio",
   tagline:
     "A quick and easy to use drag and drop retro game creator for your favourite handheld video game system.",
-  url: "https://gbstudio.dev",
+  url: "https://pomdap.github.io/gb-studio-docs/",
+  trailingSlash: false,
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -25,7 +26,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "de", "es", "pl", "fr"],
+    locales: ["en", "fr"],
     localeConfigs: {
       en: {
         label: "English",
