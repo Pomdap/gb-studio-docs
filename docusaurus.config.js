@@ -9,7 +9,7 @@ const config = {
   title: "GB Studio",
   tagline:
     "A quick and easy to use drag and drop retro game creator for your favourite handheld video game system.",
-  url: "https://pomdap.github.io/",
+  url: "https://pomdap.github.io",
   trailingSlash: false,
   baseUrl: "/gb-studio-docs/",
   onBrokenLinks: "throw",
@@ -25,8 +25,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
+    defaultLocale: "fr",
+    locales: ["fr"],
     localeConfigs: {
       en: {
         label: "English",
