@@ -53,22 +53,22 @@ function Scene(props) {
   const colorMode = props.colorMode;
   const ref = useRef();
 
-  const obj = useLoader(OBJLoader, "/img/hero/logo9.obj");
+  const obj = useLoader(OBJLoader, useBaseUrl("/img/hero/logo9.obj"));
   const texture = useLoader(
     TextureLoader,
     colorMode === "dark"
-      ? "/img/hero/texture-dark.png"
-      : "/img/hero/texture.png"
+      ? useBaseUrl("/img/hero/texture-dark.png")
+      : useBaseUrl("/img/hero/texture.png")
   );
-  const normals = useLoader(TextureLoader, "/img/hero/normals.png");
-  const roughness = useLoader(TextureLoader, "/img/hero/roughness4.png");
-  const glow = useLoader(TextureLoader, "/img/hero/glow3.png");
+  const normals = useLoader(TextureLoader, useBaseUrl("/img/hero/normals.png"));
+  const roughness = useLoader(TextureLoader, useBaseUrl("/img/hero/roughness4.png"));
+  const glow = useLoader(TextureLoader, useBaseUrl("/img/hero/glow3.png"));
 
   texture.encoding = sRGBEncoding;
 
   const [video] = useState(() => {
     const vid = document.createElement("video");
-    vid.src = "/img/hero/recording.mp4";
+    vid.src = useBaseUrl("/img/hero/recording.mp4");
     vid.crossOrigin = "Anonymous";
     vid.loop = true;
     vid.muted = true;

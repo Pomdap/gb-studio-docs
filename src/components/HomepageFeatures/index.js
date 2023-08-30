@@ -5,6 +5,7 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import useIsBrowser from "@docusaurus/useIsBrowser";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 
 const FeatureList = [
   {
@@ -47,7 +48,7 @@ function Feature({ winImg, macImg, title, description, onOpen, showMac }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img src={showMac ? macImg : winImg} alt={title} onClick={onOpen} />
+        <img src={useBaseUrl(showMac ? macImg : winImg)} alt={title} onClick={onOpen} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -90,16 +91,16 @@ export default function HomepageFeatures() {
         slides={
           showMac
             ? [
-                { src: "/img/home/screenshot_mac_1_v3.png" },
-                { src: "/img/home/screenshot_mac_3_v3.png" },
-                { src: "/img/home/screenshot_mac_4_v3.png" },
-                { src: "/img/home/screenshot_mac_2_v3.png" },
+                { src: useBaseUrl("/img/home/screenshot_mac_1_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_mac_3_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_mac_4_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_mac_2_v3.png") },
               ]
             : [
-                { src: "/img/home/screenshot_win_1_v3.png" },
-                { src: "/img/home/screenshot_win_3_v3.png" },
-                { src: "/img/home/screenshot_win_4_v3.png" },
-                { src: "/img/home/screenshot_win_2_v3.png" },
+                { src: useBaseUrl("/img/home/screenshot_win_1_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_win_3_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_win_4_v3.png") },
+                { src: useBaseUrl("/img/home/screenshot_win_2_v3.png") },
               ]
         }
         plugins={[Zoom]}
