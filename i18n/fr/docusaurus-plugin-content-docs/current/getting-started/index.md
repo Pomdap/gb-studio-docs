@@ -18,7 +18,7 @@ Si vous avez déjà un projet existant, vous pouvez l'ouvrir à partir d'ici en 
 
 ## Nouveau projet
 
-Pour commencer, donnez un nom à votre projet (ne vous inquiétez pas, vous pourrez le modifier plus tard) et choisissez un modèle de projet. Si vous débutez avec GB Studio, je vous recommande d'utiliser le modèle _Exemple de projet_ qui contient quelques exemples de scènes et de scripts déjà configurés afin que vous puissiez avoir une petite idée de ce qui est possible. Cliquez sur _Créer projet_ et vous serez redirigé vers l'_Éditeur de projet_.
+Pour commencer, donnez un nom à votre projet (ne vous inquiétez pas, vous pourrez le modifier plus tard) et choisissez un modèle de projet. Si vous débutez avec GB Studio, il est recommandé d'utiliser le modèle _Exemple de projet_ qui contient quelques exemples de scènes et de scripts déjà configurés afin que vous puissiez avoir une petite idée de ce qu'il est possible de faire. Cliquez sur _Créer projet_ et vous serez redirigé vers l'_Éditeur de projet_.
 
 <img title="Getting Started" src="/fr/img/screenshots/getting-started-v3.png" width="1258" />
 
