@@ -37,7 +37,7 @@ Dans le mode d'édition du monde du jeu, vous pouvez utiliser les touches suivan
 **Ajouter une Scène** - `S`  
 **Mode gomme** - `E`  
 **Mode collisions** - `C`  
-**Positionner la zone de départ du joueur** - `P` (tout en survolant l'emplacement souhaité)
+**Positionner la zone de départ du joueur** - `P` (tout en survolant l'emplacement souhaité)  
 **Déplacement de vue** - Maintenir `Espace` (tout en cliquant et en faisant glisser le _Monde du jeu_)
 
 ## Mode dessin
@@ -80,36 +80,36 @@ Ces commandes ne sont disponibles que lors de l'utilisation de l'_Éditeur de mu
 
 **Enregistrer la musique** - `Ctrl/Cmd` + `S`  
 **Jouer/Pause** - `Espace`  
-**Play from position** - `Alt/Option` + `Space`  
-**Switch to Tracker/Piano Roll** - `` ` ``  
+**Jouer depuis la position** - `Alt/Option` + `Espace`  
+**Passer au Tracker/Piano Roll** - `` ` ``
 
 ### Tracker
 
-**Navigate grid** - `Arrow Keys`  
-**Next Column** - `Tab`  
-**Previous Column** - `Maj` + `Tab`  
+**Naviguer dans la grille** - `Touches fléchées`  
+**Se rendre à la colonne suivante** - `Tab`  
+**Se rendre à la colonne précédente** - `Maj` + `Tab`
 
-**Cell Selection** - `Maj` + `Arrow Keys` *or* Click to set first cell, hold `Maj`, click to set next cell  
-**Select Column** - `Ctrl/Cmd` + `A`  
-**Select Pattern** - `Ctrl/Cmd` + `A`, `Ctrl/Cmd` + `A`   
-**Copy Selection** - `Ctrl/Cmd` + `C`  
-**Paste Selection** - `Ctrl/Cmd` + `V`  
-**Delete Selection** - `Backspace/Delete`
+**Sélectionner une cellule** - `Maj` + `Touches fléchées` *ou* Cliquer pour sélectionner la première cellule, maintenir `Maj`, Cliquer pour sélectionner les cellules suivantes  
+**Sélectionner la colonne** - `Ctrl/Cmd` + `A`  
+**Sélectionner un motif** - `Ctrl/Cmd` + `A`, `Ctrl/Cmd` + `A`  
+**Copier la sélection** - `Ctrl/Cmd` + `C`  
+**Coller la sélection** - `Ctrl/Cmd` + `V`  
+**Supprimer la sélection** - `Retour arrière/Suppr`
 
-**Transpose Selection (small step up)** - `Ctrl` + `=` *or* `Ctrl` + `Scroll wheel`   
-**Transpose Selection (small step down)** - `Ctrl` + `-`   
-**Transpose Selection (big step up)** - `Ctrl` + `Maj` + `=` *or* `Ctrl` + `Maj` + `Q`  
-**Transpose Selection (big step down)** - `Ctrl` + `Maj` + `-` *or* `Ctrl` + `Maj` + `A`  
+**Transposer la sélection (faire une petite augmentation)** - `Ctrl` + `=` *ou* `Ctrl` + `Molette`  
+**Transposer la sélection (faire une petite diminution)** - `Ctrl` + `-`  
+**Transposer la sélection (faire une grosse augmentation)** - `Ctrl` + `Maj` + `=` *ou* `Ctrl` + `Maj` + `Q`  
+**Transposer la sélection (faire une grosse diminution)** - `Ctrl` + `Maj` + `-` *ou* `Ctrl` + `Maj` + `A`
 
 ### Piano roll
 
-**Change Instrument** - `1-9`  
-**Quick Select** - `Maj` + drag and drop mouse  
-**Duplicate Selection** - `Alt/Option` (while moving selected notes)
+**Changer d’instrument** - `1-9`  
+**Sélection rapide** - `Maj` + glisser/déposer la souris  
+**Dupliquer la sélection** - `Alt/Option` (tout en déplaçant les notes sélectionnées)
 
-**Select Channel** - `Ctrl/Cmd` + `A`  
-**Copy Selection** - `Ctrl/Cmd` + `C`  
-**Paste Selection** - `Ctrl/Cmd` + `V`  
-**Paste and Replace Channel** - `Ctrl/Cmd` + `Maj` + `V`  
-**Delete Selection** - `Backspace/Delete`
+**Sélectionner un canal** - `Ctrl/Cmd` + `A`  
+**Copier la sélection** - `Ctrl/Cmd` + `C`  
+**Coller la sélection** - `Ctrl/Cmd` + `V`  
+**Coller et remplacer le canal** - `Ctrl/Cmd` + `Maj` + `V`  
+**Supprimer la sélection** - `Retour arrière/Suppr`
 
