@@ -1,8 +1,10 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/nightOwlLight");
-const darkCodeTheme = require("prism-react-renderer/themes/nightOwl");
+import { themes } from "prism-react-renderer";
+
+const lightCodeTheme = themes.nightOwlLight;
+const darkCodeTheme = themes.nightOwl;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -107,6 +109,16 @@ const config = {
             label: "Download",
             position: "right",
           },
+          {
+            type: "search",
+            position: "right",
+          },
+          {
+            href: "https://www.patreon.com/gbstudiodev",
+            label: "Donate",
+            position: "right",
+            className: "donate-btn",
+          },
         ],
       },
       footer: {
@@ -137,8 +149,12 @@ const config = {
                 href: "https://www.reddit.com/r/gbstudio",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/GBStudioDev",
+                label: "X",
+                href: "https://x.com/GBStudioDev",
+              },
+              {
+                label: "Patreon",
+                href: "https://www.patreon.com/gbstudiodev",
               },
             ],
           },

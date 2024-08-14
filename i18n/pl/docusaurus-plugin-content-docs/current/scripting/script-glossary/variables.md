@@ -9,7 +9,118 @@ import ScriptEventPreview from '@site/src/components/ScriptEventPreview';
 
 # Zmienne
 
-## Zmienna: wzór matematyczny
+### Zmienna: ustaw wartość
+Ustawienie wybranej zmiennej na określoną wartość.
+<ScriptEventPreview title={"Zmienna: ustaw wartość"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE","flexBasis":0,"minWidth":150},{"key":"value","label":"Wartość","description":"Wartość do ustawienia wybranej zmiennej.","type":"value","defaultValue":{"type":"number","value":0}}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Wartość**: Wartość do ustawienia wybranej zmiennej.  
+
+## Actor
+### Aktor: zapisz obrót w zmiennej
+Polecenie zapisuje bieżący kierunek aktora do zmiennej.
+<ScriptEventPreview title={"Aktor: zapisz obrót w zmiennej"} fields={[{"key":"actorId","label":"Aktor","description":"Wybierz aktora do sprawdzenia.","type":"actor","defaultValue":"$self$"},{"key":"direction","label":"Zmienna","description":"Zmienna używana dla kierunku.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
+
+- **Aktor**: Wybierz aktora do sprawdzenia.  
+- **Zmienna**: Zmienna używana dla kierunku.  
+
+### Aktor: zapisz położenie w zmiennych
+Polecenie zapisuje bieżącą pozycję aktora w dwóch zmiennych. Jedna przechowuje pozycję poziomą, a druga pozycję pionową.
+<ScriptEventPreview title={"Aktor: zapisz położenie w zmiennych"} fields={[{"key":"actorId","label":"Aktor","description":"Wybierz aktora do sprawdzenia.","type":"actor","defaultValue":"$self$"},{"type":"group","fields":[{"key":"vectorX","type":"variable","label":"X","description":"Zmienna używana dla pozycji poziomej.","defaultValue":"LAST_VARIABLE","width":"50%","unitsField":"units","unitsDefault":"tiles","unitsAllowed":["tiles","pixels"]},{"key":"vectorY","type":"variable","label":"Y","description":"Zmienna używana dla pozycji pionowej.","defaultValue":"LAST_VARIABLE","width":"50%","unitsField":"units","unitsDefault":"tiles","unitsAllowed":["tiles","pixels"]}]}]} />
+
+- **Aktor**: Wybierz aktora do sprawdzenia.  
+- **X**: Zmienna używana dla pozycji poziomej.  
+- **Y**: Zmienna używana dla pozycji pionowej.  
+
+## Boolean
+### Zmienna: ustaw na ''Fałsz''
+Ustawienie wartości wybranej zmiennej na 'Fałsz'.
+<ScriptEventPreview title={"Zmienna: ustaw na ''Fałsz''"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE","flexBasis":0,"minWidth":150},{"key":"value","label":"Wartość","description":"Wartość do ustawienia wybranej zmiennej.","type":"value","defaultValue":{"type":"false"}}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Wartość**: Wartość do ustawienia wybranej zmiennej.  
+
+### Zmienna: ustaw na ''Prawda''
+Ustawienie wartości wybranej zmiennej na 'Prawda'.
+<ScriptEventPreview title={"Zmienna: ustaw na ''Prawda''"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE","flexBasis":0,"minWidth":150},{"key":"value","label":"Wartość","description":"Wartość do ustawienia wybranej zmiennej.","type":"value","defaultValue":{"type":"true"}}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Wartość**: Wartość do ustawienia wybranej zmiennej.  
+
+## Control Flow
+### Warunek: zmienna porównuje się do wartości
+Warunkowe uruchomienie części skryptu na podstawie wartości zmiennej w porównaniu z wartością.
+<ScriptEventPreview title={"Warunek: zmienna porównuje się do wartości"} fields={[{"key":"condition","label":"Warunek","description":"Warunek do oceny.","type":"value","defaultValue":{"type":"eq","valueA":{"type":"variable","value":"LAST_VARIABLE"},"valueB":{"type":"number","value":0}}},{"key":"true","label":"Prawda","description":"Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).","type":"events"},{"key":"__collapseElse","label":"W innym wypadku","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"Fałsz","description":"Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
+
+- **Warunek**: Warunek do oceny.  
+- **Prawda**: Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).  
+- **Fałsz**: Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).  
+
+### Warunek: zmienna porównuje się do zmiennej
+Warunkowe uruchomienie części skryptu na podstawie wartości zmiennej w porównaniu z inną zmienną.
+<ScriptEventPreview title={"Warunek: zmienna porównuje się do zmiennej"} fields={[{"key":"condition","label":"Warunek","description":"Warunek do oceny.","type":"value","defaultValue":{"type":"eq","valueA":{"type":"variable","value":"LAST_VARIABLE"},"valueB":{"type":"variable","value":"LAST_VARIABLE"}}},{"key":"true","label":"Prawda","description":"Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).","type":"events"},{"key":"__collapseElse","label":"W innym wypadku","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"Fałsz","description":"Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
+
+- **Warunek**: Warunek do oceny.  
+- **Prawda**: Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).  
+- **Fałsz**: Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).  
+
+## Counter
+### Zmienna: zmniejsz o 1
+Zmniejszenie wartości wybranej zmiennej o 1.
+<ScriptEventPreview title={"Zmienna: zmniejsz o 1"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+
+### Zmienna: zwiększ o 1
+Zwiększenie wartości wybranej zmiennej o 1.
+<ScriptEventPreview title={"Zmienna: zwiększ o 1"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+
+## Engine Fields
+### Silnik: zapisz pole w zmiennej
+Polecenie zapisuje wartość wybranego pola silnika do zmiennej.
+
+**Odniesienia**  
+[/docs/settings/#engine-settings](/docs/settings/#engine-settings)  
+<ScriptEventPreview title={"Silnik: zapisz pole w zmiennej"} fields={[{"type":"engineField","label":"Pole silnika","description":"Pole silnika do odczytania wartości.","key":"engineFieldKey"},{"key":"value","type":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","defaultValue":"LAST_VARIABLE","conditions":[{"key":"engineFieldKey","set":true}]}]} />
+
+- **Pole silnika**: Pole silnika do odczytania wartości.  
+- **Zmienna**: Wskaż zmienną do użycia.  
+
+## Flags
+### Zmienna: dodaj flagę
+Polecenie ustawi wybraną flagę jako 'prawda' dla zmiennej. Wszystkie niewybrane flagi zachowają swoją poprzednią wartość.
+<ScriptEventPreview title={"Zmienna: dodaj flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Flaga 1**: Ustaw flagę 1 jako prawda.  
+- **Flaga 2**: Ustaw flagę 2 jako prawda.  
+- **Flaga 3**: Ustaw flagę 3 jako prawda.  
+- **Flaga 4**: Ustaw flagę 4 jako prawda.  
+
+### Zmienna: czyść flagę
+Polecenie ustawi wybrane flagi jako 'fałsz' dla zmiennej. Wszystkie niewybrane flagi zachowają swoją poprzednią wartość.
+<ScriptEventPreview title={"Zmienna: czyść flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako fałsz.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako fałsz.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako fałsz.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako fałsz.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako fałsz.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Flaga 1**: Ustaw flagę 1 jako fałsz.  
+- **Flaga 2**: Ustaw flagę 2 jako fałsz.  
+- **Flaga 3**: Ustaw flagę 3 jako fałsz.  
+- **Flaga 4**: Ustaw flagę 4 jako fałsz.  
+
+### Zmienna: ustaw flagę
+Polecenie ustawi wartość zmiennej, włączając poszczególne bity 16-bitowej liczby. Umożliwia przechowywanie 16 wartości prawda/fałsz w jednej zmiennej. Ustawienie flag zastąpi poprzednią wartość zmiennej.
+<ScriptEventPreview title={"Zmienna: ustaw flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako prawda.","hideFromDocs":false,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako prawda.","hideFromDocs":true,"type":"flag","width":"50%","flexBasis":"40%","defaultValue":false}]} />
+
+- **Zmienna**: Wskaż zmienną do użycia.  
+- **Flaga 1**: Ustaw flagę 1 jako prawda.  
+- **Flaga 2**: Ustaw flagę 2 jako prawda.  
+- **Flaga 3**: Ustaw flagę 3 jako prawda.  
+- **Flaga 4**: Ustaw flagę 4 jako prawda.  
+
+## Math
+### Zmienna: wzór matematyczny
 Polecenie ustawi zmienną na wynik oceny wyrażenia matematycznego.
 
 **Odniesienia**  
@@ -19,124 +130,32 @@ Polecenie ustawi zmienną na wynik oceny wyrażenia matematycznego.
 - **Zmienna**: Wskaż zmienną do użycia.  
 - **Wyrażenie**: Wprowadź wyrażenie do oceny.  
 
-## Warunek: zmienna porównuje się do wartości
-Warunkowe uruchomienie części skryptu na podstawie wartości zmiennej w porównaniu z wartością.
-<ScriptEventPreview title={"Warunek: zmienna porównuje się do wartości"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"operator","label":"Porównanie","description":"Operator porównania do wykorzystania m.in. 'Mniej niż' lub 'Większe niż;.","type":"operator","width":"50%","defaultValue":"=="},{"key":"comparator","label":"Wartość","description":"Wartość do porównania.","type":"number","min":-32768,"max":32767,"width":"50%","defaultValue":"0"},{"key":"true","label":"Prawda","description":"Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).","type":"events"},{"key":"__collapseElse","label":"W innym wypadku","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"Fałsz","description":"Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Porównanie**: Operator porównania do wykorzystania m.in. 'Mniej niż' lub 'Większe niż;.  
-- **Wartość**: Wartość do porównania.  
-- **Prawda**: Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).  
-- **Fałsz**: Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).  
-
-## Warunek: zmienna porównuje się do zmiennej
-Warunkowe uruchomienie części skryptu na podstawie wartości zmiennej w porównaniu z inną zmienną.
-<ScriptEventPreview title={"Warunek: zmienna porównuje się do zmiennej"} fields={[{"key":"vectorX","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"operator","label":"Porównanie","description":"Operator porównania do wykorzystania m.in. 'Mniej niż' lub 'Większe niż;.","type":"operator","width":"50%","defaultValue":"=="},{"key":"vectorY","label":"Inna zmienna","description":"Wybierz zmienną do porównania.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"true","label":"Prawda","description":"Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).","type":"events"},{"key":"__collapseElse","label":"W innym wypadku","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"Fałsz","description":"Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Porównanie**: Operator porównania do wykorzystania m.in. 'Mniej niż' lub 'Większe niż;.  
-- **Inna zmienna**: Wybierz zmienną do porównania.  
-- **Prawda**: Skrypt do uruchomienia, jeśli warunek jest spełniony (prawda).  
-- **Fałsz**: Skrypt do uruchomienia, jeśli warunek jest nie spełniony (fałsz).  
-
-## Zmienna: funkcje matematyczne
+### Zmienna: funkcje matematyczne
 Polecenie umożliwia wykonanie różnych funkcji matematycznych na zmiennej w celu dodania/odjęcia/mnożenia/dzielenia/modułu określonej wartości/zmiennej/losowej liczby.
-<ScriptEventPreview title={"Zmienna: funkcje matematyczne"} fields={[{"key":"vectorX","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"operation","label":"Operacja","description":"Operacja używana do modyfikacji wartości zmiennej.","type":"select","options":[["set","Ustaw"],["add","Dodaj"],["sub","Odejmij"],["mul","Pomnóż"],["div","Podziel"],["mod","Modulo"]],"defaultValue":"set","width":"50%"},{"key":"other","label":"Wartość","description":"Wartość do połączenia ze zmienną przy użyciu wybranej operacji.","type":"select","options":[["true","Prawda"],["false","Fałsz"],["var","Zmienna"],["val","Wartość"],["rnd","Losowa"]],"defaultValue":"true","width":"50%"},{"key":"vectorY","type":"variable","conditions":[{"key":"other","eq":"var"}],"defaultValue":"LAST_VARIABLE"},{"key":"value","type":"number","conditions":[{"key":"other","eq":"val"}],"min":-32768,"max":32767,"defaultValue":"0"},{"type":"group","fields":[{"key":"minValue","type":"number","conditions":[{"key":"other","eq":"rnd"}],"min":-32768,"max":32767,"label":"Wartość minimalna","description":"Ustalenie wartości minimalnej zasięgu losowego.","hideFromDocs":true,"defaultValue":"0","width":"50%"},{"key":"maxValue","type":"number","conditions":[{"key":"other","eq":"rnd"}],"min":-32768,"max":32767,"label":"Wartość maksymalna","description":"Ustalenie wartości maksymalnej zasięgu losowego.","hideFromDocs":true,"defaultValue":"32767","width":"50%"}]},{"key":"clamp","type":"checkbox","label":"Wartość zasisku 0 - 255","hideFromDocs":true,"conditions":[{"key":"operation","in":["add","sub","mul"]}],"defaultValue":false,"alignCheckbox":true}]} />
+<ScriptEventPreview title={"Zmienna: funkcje matematyczne"} fields={[{"key":"vectorX","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"operation","label":"Operacja","description":"Operacja używana do modyfikacji wartości zmiennej.","type":"select","options":[["set","Ustaw"],["add","Dodaj"],["sub","Odejmij"],["mul","Pomnóż"],["div","Podziel"],["mod","Modulo"]],"defaultValue":"set","width":"50%"},{"key":"other","label":"Wartość","description":"Wartość do połączenia ze zmienną przy użyciu wybranej operacji.","type":"select","options":[["true","Prawda"],["false","Fałsz"],["var","Zmienna"],["val","Wartość"],["rnd","Losowa"]],"defaultValue":"true","width":"50%"},{"key":"vectorY","type":"variable","conditions":[{"key":"other","eq":"var"}],"defaultValue":"LAST_VARIABLE"},{"key":"value","type":"number","conditions":[{"key":"other","eq":"val"}],"min":-32768,"max":32767,"defaultValue":"0"},{"type":"group","fields":[{"key":"minValue","type":"number","conditions":[{"key":"other","eq":"rnd"}],"min":-32768,"max":32767,"label":"Wartość minimalna","description":"Ustalenie wartości minimalnej zasięgu losowego.","hideFromDocs":true,"defaultValue":"0","width":"50%"},{"key":"maxValue","type":"number","conditions":[{"key":"other","eq":"rnd"}],"min":-32768,"max":32767,"label":"Wartość maksymalna","description":"Ustalenie wartości maksymalnej zasięgu losowego.","hideFromDocs":true,"defaultValue":"32767","width":"50%"}]},{"key":"clamp","type":"checkbox","label":"Wartość zasisku 0 - 255","hideFromDocs":true,"conditions":[{"key":"operation","in":["add","sub","mul"]}],"defaultValue":false}]} />
 
 - **Zmienna**: Wskaż zmienną do użycia.  
 - **Operacja**: Operacja używana do modyfikacji wartości zmiennej.  
 - **Wartość**: Wartość do połączenia ze zmienną przy użyciu wybranej operacji.  
 
-## Zmienna: resetuj wszystkie zmienne do ''Fałsz''
-Polecenie resetuje wszystkie zmienne użyte w projekcie, przywracając im wartość 'fałsz'.
-<ScriptEventPreview title={"Zmienna: resetuj wszystkie zmienne do ''Fałsz''"} fields={[{"label":"Resetuj WSZYSTKIE zmienne do ''Fałsz''."}]} />
-
-
-## Generator losowych liczb
+## Random
+### Generator losowych liczb
 Polecenie odpowiada za dane wejściowe użytkownika, tak, aby zapewnić zmianę losowych liczb między rozgrywakami.
 <ScriptEventPreview title={"Generator losowych liczb"} fields={[{"label":"Umieść to, aby uruchomić w odpowiedzi na dane wejściowe użytkownika, zmianę losowych liczb między rozgrywkami"}]} />
 
 
-## Aktor: zapisz położenie w zmiennych
-Polecenie zapisuje bieżącą pozycję aktora w dwóch zmiennych. Jedna przechowuje pozycję poziomą, a druga pozycję pionową.
-<ScriptEventPreview title={"Aktor: zapisz położenie w zmiennych"} fields={[{"key":"actorId","label":"Aktor","description":"Wybierz aktora do sprawdzenia.","type":"actor","defaultValue":"$self$"},{"type":"group","fields":[{"key":"vectorX","type":"variable","label":"X","description":"Zmienna używana dla pozycji poziomej.","defaultValue":"LAST_VARIABLE","width":"50%","unitsField":"units","unitsDefault":"tiles","unitsAllowed":["tiles","pixels"]},{"key":"vectorY","type":"variable","label":"Y","description":"Zmienna używana dla pozycji pionowej.","defaultValue":"LAST_VARIABLE","width":"50%","unitsField":"units","unitsDefault":"tiles","unitsAllowed":["tiles","pixels"]}]}]} />
+## Reset
+### Zmienna: resetuj wszystkie zmienne do ''Fałsz''
+Polecenie resetuje wszystkie zmienne użyte w projekcie, przywracając im wartość 'fałsz'.
+<ScriptEventPreview title={"Zmienna: resetuj wszystkie zmienne do ''Fałsz''"} fields={[{"label":"Resetuj WSZYSTKIE zmienne do ''Fałsz''."}]} />
 
-- **Aktor**: Wybierz aktora do sprawdzenia.  
-- **X**: Zmienna używana dla pozycji poziomej.  
-- **Y**: Zmienna używana dla pozycji pionowej.  
 
-## Silnik: zapisz pole w zmiennej
-Polecenie zapisuje wartość wybranego pola silnika do zmiennej.
-
-**Odniesienia**  
-[/docs/settings/#engine-settings](/docs/settings/#engine-settings)  
-<ScriptEventPreview title={"Silnik: zapisz pole w zmiennej"} fields={[{"type":"engineField","label":"Pole silnika","description":"Pole silnika do odczytania wartości.","key":"engineFieldKey"}]} />
-
-- **Pole silnika**: Pole silnika do odczytania wartości.  
-
-## Zmienna: wartość z zapisu do zmiennej
+## Save Data
+### Zmienna: wartość z zapisu do zmiennej
 Polecenie odczytuje wartość zmiennej z określonego miejsca zapisu, a następnie zapisuje ją do zmiennej.
 <ScriptEventPreview title={"Zmienna: wartość z zapisu do zmiennej"} fields={[{"key":"variableDest","label":"Ustaw zmienną","description":"Zmienna do aktualizacji.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"group","fields":[{"key":"variableSource","label":"Dodaj do zmiennej","description":"Zmienna do odczytania wartości.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"saveSlot","label":"Zapisz z pliku","description":"Określenie miejsca zapisu.","type":"togglebuttons","options":[[0,"Plik 1","Zapisz plik 1"],[1,"Plik 2","Zapisz plik 2"],[2,"Plik 3","Zapisz plik 3"]],"allowNone":false,"defaultValue":0}]}]} />
 
 - **Ustaw zmienną**: Zmienna do aktualizacji.  
 - **Dodaj do zmiennej**: Zmienna do odczytania wartości.  
 - **Zapisz z pliku**: Określenie miejsca zapisu.  
-
-## Zmienna: zmniejsz o 1
-Zmniejszenie wartości wybranej zmiennej o 1.
-<ScriptEventPreview title={"Zmienna: zmniejsz o 1"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-
-## Zmienna: dodaj flagę
-Polecenie ustawi wybraną flagę jako 'prawda' dla zmiennej. Wszystkie niewybrane flagi zachowają swoją poprzednią wartość.
-<ScriptEventPreview title={"Zmienna: dodaj flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Flaga 1**: Ustaw flagę 1 jako prawda.  
-- **Flaga 2**: Ustaw flagę 2 jako prawda.  
-- **Flaga 3**: Ustaw flagę 3 jako prawda.  
-
-## Zmienna: czyść flagę
-Polecenie ustawi wybrane flagi jako 'fałsz' dla zmiennej. Wszystkie niewybrane flagi zachowają swoją poprzednią wartość.
-<ScriptEventPreview title={"Zmienna: czyść flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako fałsz.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako fałsz.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako fałsz.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako fałsz.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Flaga 1**: Ustaw flagę 1 jako fałsz.  
-- **Flaga 2**: Ustaw flagę 2 jako fałsz.  
-- **Flaga 3**: Ustaw flagę 3 jako fałsz.  
-
-## Zmienna: ustaw flagę
-Polecenie ustawi wartość zmiennej, włączając poszczególne bity 16-bitowej liczby. Umożliwia przechowywanie 16 wartości prawda/fałsz w jednej zmiennej. Ustawienie flag zastąpi poprzednią wartość zmiennej.
-<ScriptEventPreview title={"Zmienna: ustaw flagę"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"type":"break"},{"key":"flag1","label":"Flaga 1","description":"Ustaw flagę 1 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag2","label":"Flaga 2","description":"Ustaw flagę 2 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag3","label":"Flaga 3","description":"Ustaw flagę 3 jako prawda.","type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag4","label":"Flaga 4","description":"Ustaw flagę 4 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag5","label":"Flaga 5","description":"Ustaw flagę 5 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag6","label":"Flaga 6","description":"Ustaw flagę 6 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag7","label":"Flaga 7","description":"Ustaw flagę 7 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag8","label":"Flaga 8","description":"Ustaw flagę 8 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag9","label":"Flaga 9","description":"Ustaw flagę 9 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag10","label":"Flaga 10","description":"Ustaw flagę 10 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag11","label":"Flaga 11","description":"Ustaw flagę 11 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag12","label":"Flaga 12","description":"Ustaw flagę 12 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag13","label":"Flaga 13","description":"Ustaw flagę 13 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag14","label":"Flaga 14","description":"Ustaw flagę 14 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag15","label":"Flaga 15","description":"Ustaw flagę 15 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false},{"key":"flag16","label":"Flaga 16","description":"Ustaw flagę 16 jako prawda.","hideFromDocs":true,"type":"checkbox","width":"50%","flexBasis":"40%","defaultValue":false}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Flaga 1**: Ustaw flagę 1 jako prawda.  
-- **Flaga 2**: Ustaw flagę 2 jako prawda.  
-- **Flaga 3**: Ustaw flagę 3 jako prawda.  
-
-## Zmienna: zwiększ o 1
-Zwiększenie wartości wybranej zmiennej o 1.
-<ScriptEventPreview title={"Zmienna: zwiększ o 1"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-
-## Zmienna: ustaw na ''Fałsz''
-Ustawienie wartości wybranej zmiennej na 'Fałsz'.
-<ScriptEventPreview title={"Zmienna: ustaw na ''Fałsz''"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-
-## Zmienna: ustaw na ''Prawda''
-Ustawienie wartości wybranej zmiennej na 'Prawda'.
-<ScriptEventPreview title={"Zmienna: ustaw na ''Prawda''"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-
-## Zmienna: ustaw wartość
-Ustawienie wybranej zmiennej na określoną wartość.
-<ScriptEventPreview title={"Zmienna: ustaw wartość"} fields={[{"key":"variable","label":"Zmienna","description":"Wskaż zmienną do użycia.","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"value","label":"Wartość","description":"Wartość do ustawienia wybranej zmiennej.","type":"union","types":["number","variable","property"],"defaultType":"number","min":-32768,"max":32767,"defaultValue":{"number":0,"variable":"LAST_VARIABLE","property":"$self$:xpos"}}]} />
-
-- **Zmienna**: Wskaż zmienną do użycia.  
-- **Wartość**: Wartość do ustawienia wybranej zmiennej.  
 

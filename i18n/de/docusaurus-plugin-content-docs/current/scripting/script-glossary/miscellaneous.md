@@ -9,41 +9,52 @@ import ScriptEventPreview from '@site/src/components/ScriptEventPreview';
 
 # Sonstiges
 
-## Kommentar
+### Kommentar
 Allows you to leave notes within your scripts. Provides no functionality in-game. The text you type automatically gets set in the event title, so you can collapse the comment and still read its content.
 <ScriptEventPreview title={"Kommentar"} fields={[{"key":"text","type":"textarea","maxPerLine":50,"placeholder":"Text...","multiple":false,"defaultValue":""}]} />
 
 
-## Ereignisgruppe
-Alows you to group together parts of your script for organizational purposes.
+### Ereignisgruppe
+Ermöglicht es, Teile des Skripts aus organisatorischen Gründen zusammenzufassen.
 <ScriptEventPreview title={"Ereignisgruppe"} fields={[{"key":"true","type":"events"}]} />
 
 
-## GBVM Skript
-Run a GBVM script.
+### GBVM Skript
+Ein GBVM Skript ausführen.
 
 **Referenzen**  
 [/docs/scripting/gbvm/](/docs/scripting/gbvm/)  
 [/docs/scripting/gbvm/gbvm-operations](/docs/scripting/gbvm/gbvm-operations)  
-<ScriptEventPreview title={"GBVM Skript"} fields={[{"key":"script","label":"Script","description":"A valid GBVM Script to execute.","type":"code","flexBasis":"100%"},{"key":"references","type":"references","label":"Referenzen","description":"A list of the assets and entities used in your GBVM script. Use this to let GB Studio know that a file is needed by your script, preventing it from being excluded in the final build."}]} />
+<ScriptEventPreview title={"GBVM Skript"} fields={[{"key":"script","label":"Skript","description":"Ein gültiges GBVM-Skript zur Ausführung.","type":"code","flexBasis":"100%"},{"key":"references","type":"references","label":"Referenzen","description":"Eine Liste der im GBVM-Skript verwendeten Assets und Entities. Dadurch teilt man GB Studio mit, dass das Skripts eine Datei benötigt, um zu verhindern, dass es während der Erstellung ausgeschlossen wird."}]} />
 
-- **Script**: A valid GBVM Script to execute.  
-- **Referenzen**: A list of the assets and entities used in your GBVM script. Use this to let GB Studio know that a file is needed by your script, preventing it from being excluded in the final build.  
+- **Skript**: Ein gültiges GBVM-Skript zur Ausführung.  
+- **Referenzen**: Eine Liste der im GBVM-Skript verwendeten Assets und Entities. Dadurch teilt man GB Studio mit, dass das Skripts eine Datei benötigt, um zu verhindern, dass es während der Erstellung ausgeschlossen wird.  
 
-## Link: Schließen
+### Script Lock
+Pause other scripts and scene updates until this script has finished or is unlocked.
+<ScriptEventPreview title={"Script Lock"} fields={[{"label":"Pause other scripts and scene updates until this script has finished or is unlocked."}]} />
+
+
+### Script Unlock
+If locked, unlock this script so other scripts can run and the scene can update.
+<ScriptEventPreview title={"Script Unlock"} fields={[{"label":"If locked, unlock this script so other scripts can run and the scene can update."}]} />
+
+
+## Multiplayer
+### Link: Schließen
 <ScriptEventPreview title={"Link: Schließen"} fields={[{"label":"Schließe die derzeitige Link-Verbindung."}]} />
 
 
-## Link: Hosten
+### Link: Hosten
 <ScriptEventPreview title={"Link: Hosten"} fields={[{"label":"Link-Verbindung hosten."}]} />
 
 
-## Link: Beitreten
+### Link: Beitreten
 <ScriptEventPreview title={"Link: Beitreten"} fields={[{"label":"Link-Verbindung beitreten."}]} />
 
 
-## Link: Übermitteln
-<ScriptEventPreview title={"Link: Übermitteln"} fields={[{"key":"sendVariable","label":"Variable senden","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"receiveVariable","label":"Variable empfangen","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"size","label":"Paketgröße","type":"number","defaultValue":1}]} />
+### Link: Übertragen
+<ScriptEventPreview title={"Link: Übertragen"} fields={[{"key":"sendVariable","label":"Variable senden","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"receiveVariable","label":"Variable empfangen","type":"variable","defaultValue":"LAST_VARIABLE"},{"key":"size","label":"Paketgröße","type":"number","defaultValue":1}]} />
 
 - **Variable senden**  
 - **Variable empfangen**  

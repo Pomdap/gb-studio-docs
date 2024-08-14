@@ -6,6 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-background-color: #ffffff;
   --ifm-color-primary: #c92c61;
   --ifm-color-primary-dark: #bc295a;
   --ifm-color-primary-darker: #277148;
@@ -25,7 +26,7 @@
   --gbs-event-header-fg: #3b3a3b;
   --gbs-event-input-bg: #ffffff;
   --gbs-event-input-fg: #3b3a3b;
-  --gbs-event-input-border: #e4e4e4;
+  --gbs-event-input-border: #d4d4d4;
   --gbs-event-button-bg: linear-gradient(to bottom, #fefdfe 0%, #f1f1f1 100%);
   --gbs-event-button-fg: #3b3a3b;
   --gbs-event-button-border: 1px solid #c5c5c5;
@@ -87,8 +88,42 @@
   -webkit-filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.3));
 }
 
+.clip-bottom {
+  display: flex;
+  overflow: hidden;
+  border-radius: 8px;
+  clip-path: inset(0px 0px 1px 0px); 
+}
+
+.margin-bottom {
+  margin-bottom: var(--ifm-leading);
+}
+
 .footer__links {
   margin-bottom: 4rem;
+}
+
+.donate-btn {
+  border: 2px solid #fff;
+  background: #c92c61;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.donate-btn:hover {
+  background: #c92c61;
+  color: #fff;
+  border: 2px solid #9a1743;
+  cursor: pointer;
+}
+
+object {
+  max-width: 100%;
+}
+
+.no-wrap {
+  white-space: nowrap;;
 }
 
 /* Fix text zoom on iOS Safari when searching */

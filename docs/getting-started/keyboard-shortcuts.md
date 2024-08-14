@@ -5,6 +5,8 @@
 
 When playing your game inside GB Studio use the following keyboard controls:
 
+<object data="/img/manual/keyboard-controls.svg" class="margin-bottom" />
+
 **Up** - `Up Arrow` / `W`  
 **Down** - `Down Arrow` / `S`  
 **Left** - `Left Arrow` / `A`  
@@ -13,8 +15,6 @@ When playing your game inside GB Studio use the following keyboard controls:
 **B** - `Ctrl` / `K` / `X`  
 **Start** - `Enter`  
 **Select** - `Shift`
-
-These controls can be modified at any time by going to the _Settings View_ under the _Controls_ section.
 
 You can also control the _Play Window_ using a supported gamepad. If your web browser has gamepad support you can also use it when running a web build.
 
@@ -39,7 +39,20 @@ While editing the game world you can use the following keys to quickly manipulat
 **Eraser Mode** - `E`  
 **Collisions Mode** - `C`  
 **Set Player Start Position** - `P` (while hovering over desired location)  
-**Pan View** - Hold `Space` (while clicking and dragging on _Game World_)
+**Pan View** - Hold `Space` (while clicking and dragging on _Game World_)  
+**Zoom** - Hold `Ctrl/Cmd` + `Scroll wheel`  
+**Focus on Scene Search** - `/`  
+
+## Navigator
+
+The [Navigator](/docs/project-editor/navigator) is the sidebar on the left which allows quickly navigating through your project.
+
+**Move selection up** - `Arrow Up`  
+**Move selection down** - `Arrow Down`  
+**Open folder** - `Arrow Right`  
+**Close folder** - `Arrow Left`  
+**Rename** - `Enter`  
+**Select multiple items** (Scenes only) - `Shift` while clicking
 
 ## Drawing Mode
 
@@ -55,7 +68,7 @@ Drawing mode is automatically enabled in the _Collision tool_ and the _Colorize 
 
 ## Collision Types
 
-These are only available when using the _Collision tool_.
+These are only available when using the [Collision tool](/docs/project-editor/scenes#adding-collision-to-a-scene).
 
 Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not replace existing collision when placed on top of other colliders.
 
@@ -70,14 +83,14 @@ Each tile can hold a maximum of 1 ladder and 3 collision sides. Ladders will not
 
 ## Colorize Palettes
 
-These are only available when using the _Colorize tool_.
+These are only available when using the [Colorize tool](/docs/project-editor/scenes#colorizing-a-scene).
 
 **Change Brush Palette** - `1-6`  
 **Change Palettes** - Hold click on existing palette
 
 ## Music Editor
 
-These are only available when using the _Music Editor_.
+These are only available when using the [Music Editor](/docs/assets/music/music-huge).
 
 **Save Song** - `Ctrl/Cmd` + `S`  
 **Play/Pause** - `Space`  
@@ -114,3 +127,10 @@ These are only available when using the _Music Editor_.
 **Paste and Replace Channel** - `Ctrl/Cmd` + `Shift` + `V`  
 **Delete Selection** - `Backspace/Delete`
 
+## Debugger
+
+When the [Debugger](/docs/debugger) is enabled, you can use the following keyboard shortcuts in both the _Project Window_ and _Play Window_:
+
+**Pause/Resume** - `F8`  
+**Step Forward One Instruction** - `F9`  
+**Step Forward One Frame** - `F10`  

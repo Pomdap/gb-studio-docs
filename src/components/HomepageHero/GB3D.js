@@ -10,7 +10,12 @@ import React, {
 } from "react";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { sRGBEncoding, CustomBlending, OneFactor, SrcAlphaFactor } from "three";
+import {
+  SRGBColorSpace,
+  CustomBlending,
+  OneFactor,
+  SrcAlphaFactor,
+} from "three";
 import { Billboard } from "@react-three/drei";
 import CameraControls from "camera-controls";
 import ThemedImage from "@theme/ThemedImage";
@@ -64,7 +69,7 @@ function Scene(props) {
   const roughness = useLoader(TextureLoader, "/img/hero/roughness4.png");
   const glow = useLoader(TextureLoader, "/img/hero/glow3.png");
 
-  texture.encoding = sRGBEncoding;
+  texture.colorSpace = SRGBColorSpace;
 
   const [video] = useState(() => {
     const vid = document.createElement("video");
@@ -160,7 +165,7 @@ export const GB3D = ({ colorMode }) => {
   ]);
 
   const onTouchMove = useCallback((e) => {
-    const angle = 0.3 + -1.5 * clamp01(e.touches[0].pageX / window.innerWidth);
+    const angle = 0.3 + -1.3 * clamp01(e.touches[0].pageX / window.innerWidth);
     setPos([
       distance * Math.sin(angle),
       -2 + clamp01(e.touches[0].pageY / window.innerHeight) * 8,
@@ -170,7 +175,11 @@ export const GB3D = ({ colorMode }) => {
 
   useEffect(() => {
     const onMouseMove = (e) => {
-      const angle = 0.3 + -1.5 * clamp01(e.pageX / window.innerWidth);
+      const angle =
+        e.pageX < window.innerWidth - 100
+          ? 0.3 + -1.3 * clamp01(e.pageX / window.innerWidth)
+          : 0; // If mouse near scrollbar reset angle
+
       setPos([
         distance * Math.sin(angle),
         -2 + clamp01(e.pageY / window.innerHeight) * 8,
@@ -207,8 +216,8 @@ export const GB3D = ({ colorMode }) => {
         }}
         onTouchMove={onTouchMove}
       >
-        <pointLight position={[-5, 2, -10]} intensity={0.4} />
-        <pointLight position={[5, 0, 3]} intensity={1} />
+        <pointLight position={[-5, 2, -10]} intensity={1.2} decay={0.01} />
+        <pointLight position={[5, 0, 3]} intensity={4} decay={0.01} />
         <Scene colorMode={colorMode} />
         <Controls destPosition={pos} lookAt={[0, -0.1, 0]} />
       </Canvas>

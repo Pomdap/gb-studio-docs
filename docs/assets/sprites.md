@@ -8,7 +8,7 @@ import { Swatch } from '@site/src/components/Swatch';
 
 Sprites are the graphics used by playable or interactive characters in your scenes. Add sprites to your game by including `.png` files in your project's `assets/sprites` folder.
 
-Because there are limits to how many sprites tiles can be loaded into a single scene, be sure to check your the frame limits across your scenes when adding new sprites. See [Scene Limits](docs/project-editor/scenes.md#scene-limits) for more information.
+Because there are limits to how many sprites tiles can be loaded into a single scene, be sure to check your the frame limits across your scenes when adding new sprites. See [Scene Limits](/docs/project-editor/scenes/#scene-limits) for more information.
 
 ## Simple Sprites
 
@@ -99,6 +99,7 @@ Sprite `.png`s must only contain the following four colors:
 Download the GB Studio Palette Swatches for:  
 [Adobe Photoshop](/assets/swatches/gb-studio-photoshop.aco)  
 [Aseprite](/assets/swatches/gb-studio-aseprite.aseprite)  
+[Piskel](/assets/swatches/gb-studio-piskel-sprites-palette.gpl)  
 
 The color `#65ff00` is used to represent a transparent background in game and will be invisible in-game and in the _World Editor_.
 

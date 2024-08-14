@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # Engine Eject
 
-Engine Eject copies the [GBVM game engine](https://github.com/chrismaltby/gbvm) that GB Studio uses into a folder in your project, named `assets/engine`. You can edit these source files to your liking using an IDE to have more control over how your GB Studio game is built. This feature is only recomended for developers familiar with GBDK.
+Engine Eject copies the [GBVM game engine](https://github.com/chrismaltby/gbvm) that GB Studio uses into a folder in your project, named `assets/engine`. You can edit these source files to your liking using an IDE to have more control over how your GB Studio game is built. This feature is only recommended for developers familiar with GBDK.
 
 To use Engine Eject, click on _Game_ at the top of the GB Studio window and navigate to the _Advanced_ tab to show the _Engine Eject_ button.
 
@@ -16,7 +16,7 @@ To revert any GBDK file back to its GB Studio default, delete it from the `asset
 
 ## Compile Errors
 
-If you have bugged or incompatible files in the `/engine` folder, GB Studio will not be able to build your game. Error messages can be found in the _Build & Run_ window.
+If you have broken or incompatible files in the `/engine` folder, GB Studio will not be able to build your game. Error messages can be found in the [Build Log](/docs/debugger#build-log).
 
 The error message will often explain which files have problems and point you to the line number where the problem was found, for example this error is showing that line 77 of `src/core/actor.c` is using a variable that has not yet been defined:
 
