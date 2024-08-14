@@ -22,4 +22,6 @@ Pour commencer, donnez un nom à votre projet (ne vous inquiétez pas, vous pour
 
 <img title="Nouveau projet" src={require('@site/static/fr/img/screenshots/editeur.png').default} width="1258" />
 
-Dès que vous voyez cet écran, vous pouvez cliquer sur le _Bouton Exécuter_ en haut à droite qui générera et exécutera le projet. Après avoir joué a l'exemple de projet, vous pouvez essayer de cliquer dans l'éditeur pour voir comment le projet est configuré. Sélectionnez l'un des personnages ou des panneaux et modifiez les dialogues à l'aide de la barre latérale à droite, puis essayez à nouveau d'exécuter le projet, vous venez de créer votre propre version du jeu ! Ne vous inquiétez pas si vous cassez quoi que ce soit, vous pourrez toujours créer un nouveau projet en partant du même modèle plus tard.
+Dès que vous voyez cet écran, vous pouvez cliquer sur le _Bouton Exécuter_ en haut à droite qui générera et exécutera le projet. Après avoir joué a l'exemple de projet, vous pouvez essayer de cliquer dans l'éditeur pour voir comment le projet est configuré. Sélectionnez l'un des personnages ou des panneaux et modifiez les dialogues à l'aide de la barre latérale à droite, puis essayez à nouveau d'exécuter le projet, vous venez de créer votre propre version du jeu !
+
+Ne vous inquiétez pas si vous cassez quoi que ce soit, vous pourrez toujours créer un nouveau projet en partant du même modèle plus tard.
