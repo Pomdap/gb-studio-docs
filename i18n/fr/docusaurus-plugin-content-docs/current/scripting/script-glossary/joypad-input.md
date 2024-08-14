@@ -7,7 +7,7 @@ sidebar_position: 2
 
 import ScriptEventPreview from '@site/src/components/ScriptEventPreview';
 
-# Input
+# Joypad Input
 
 ### Attach Script To Button
 Run the specified script any time a joypad button is pressed.
@@ -17,9 +17,9 @@ Run the specified script any time a joypad button is pressed.
 - **Override default button action**: Set if the script should replace the default game action for the specified button.  
 - **On Press**: The script to run when the button is pressed.  
 
-### Pause Script Until Input Pressed
+### Pause Script Until Button Pressed
 Pauses the script until one of the specified joypad buttons are pressed.
-<ScriptEventPreview title={"Pause Script Until Input Pressed"} fields={[{"key":"input","label":"Any of","description":"The input buttons to check.","type":"input","defaultValue":["a","b"]}]} />
+<ScriptEventPreview title={"Pause Script Until Button Pressed"} fields={[{"key":"input","label":"Any of","description":"The input buttons to check.","type":"input","defaultValue":["a","b"]}]} />
 
 - **Any of**: The input buttons to check.  
 
@@ -30,12 +30,12 @@ Remove an attached script from a joypad button restoring the default functionali
 - **Remove script attached to input**: The joypad button to remove the attached script from.  
 
 ## Control Flow
-### If Joypad Input Held
+### If Button Held
 Conditionally run part of the script if the specified joypad button is currently pressed. Will not wait for user input and will only execute once, if you wish to run a script every time a button is pressed use Attach Script To Button instead.
 
 **References**  
 [/docs/scripting/script-glossary/input#attach-script-to-button](/docs/scripting/script-glossary/input#attach-script-to-button)  
-<ScriptEventPreview title={"If Joypad Input Held"} fields={[{"key":"input","label":"Any of","description":"The input buttons to check.","type":"input","defaultValue":["a","b"]},{"key":"true","label":"True","description":"The script to run if the condition is true.","type":"events"},{"key":"__collapseElse","label":"Else","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"False","description":"The script to run if the condition is false.","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
+<ScriptEventPreview title={"If Button Held"} fields={[{"key":"input","label":"Any of","description":"The input buttons to check.","type":"input","defaultValue":["a","b"]},{"key":"true","label":"True","description":"The script to run if the condition is true.","type":"events"},{"key":"__collapseElse","label":"Else","type":"collapsable","defaultValue":true,"conditions":[{"key":"__disableElse","ne":true}]},{"key":"false","label":"False","description":"The script to run if the condition is false.","conditions":[{"key":"__collapseElse","ne":true},{"key":"__disableElse","ne":true}],"type":"events"}]} />
 
 - **Any of**: The input buttons to check.  
 - **True**: The script to run if the condition is true.  
