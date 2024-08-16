@@ -2,7 +2,7 @@
 
 ## Enregistrer
 
-Pour enregistrer votre projet, sélectionnez `Fichier > Enregistrer` dans le menu ou appuyez sur Ctrl/Cmd + S. Si vous essayez de fermer un projet avec des modifications non enregistrées, GB Studio vous avertira en vous donnant la possibilité d'enregistrer les modifications de votre projet. Sous macOS, toutes les modifications non enregistrées dans votre projet seront représentées par un point dans le bouton de fermeture de la fenêtre.
+Pour enregistrer votre projet, sélectionnez `Fichier > Enregistrer` dans le menu ou appuyez sur `Ctrl/Cmd` + `S`. Si vous essayez de fermer un projet avec des modifications non enregistrées, GB Studio vous avertira en vous donnant la possibilité d'enregistrer les modifications de votre projet. Sous macOS, toutes les modifications non enregistrées dans votre projet seront représentées par un point dans le bouton de fermeture de la fenêtre.
 
 ## Charger
 
