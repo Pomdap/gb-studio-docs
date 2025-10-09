@@ -10,7 +10,7 @@ Il est conçu pour être utilisable par des personnes ayant peu ou pas de connai
 
 Vous pouvez générer des ROM qui peuvent être exécutées dans un émulateur, sur une page web ou sur une véritable Game Boy.
 
-<img title="Nouveau projet" src={require('@site/static/fr/img/screenshots/se-lancer.png').default} width="592" />
+<img title="Nouveau projet" src="/img/screenshots/game-easy.png" width="592" />
 
 ## Soutien
 
