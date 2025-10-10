@@ -15,7 +15,6 @@ Lorsque vous jouez à votre jeu depuis GB Studio, utilisez les touches suivantes
 **Start** - `Entrée`
 **Select** - `Maj`
 
-<!-- Ces contrôles peuvent être modifiés à tout moment en accédant à la vue _Paramètres_ sous la section _Contrôles_. -->
 Vous pouvez également contrôler la _Fenêtre de jeu_ à l'aide d'une manette prise en charge. Si votre navigateur Web prend en charge votre manette de jeu, vous pouvez également l'utiliser lors de l'exécution de la version Web.
 
 ## Naviguer dans les menus
@@ -127,9 +126,9 @@ Ces commandes ne sont disponibles que lors de l'utilisation de l'[Éditeur de mu
 **Coller et remplacer le canal** - `Ctrl/Cmd` + `Maj` + `V`
 **Supprimer la sélection** - `Retour arrière/Suppr`
 
-## Débugueur
+## Débogueur
 
-Lorsque le [Débugueur](/docs/debugger) est activé, vous pouvez utiliser les raccourcis clavier suivants dans la _Fenêtre du projet_ et la _Fenêtre de jeu_ :
+Lorsque le [Débogueur](/docs/debugger) est activé, vous pouvez utiliser les raccourcis clavier suivants dans la _Fenêtre du projet_ et la _Fenêtre de jeu_ :
 
 **Pause/Reprendre** - `F8`
 **Avancer d'une instruction** - `F9`
