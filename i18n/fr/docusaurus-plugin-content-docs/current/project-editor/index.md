@@ -16,58 +16,59 @@ Pour consulter à nouveau les propriétés du projet à partir de la _Barre lat�
 
 ## Outils de l’éditeur
 
-### Select tool
+### Outil de sélection
 
-Clicking any scenes, actors, or triggers will update the _Editor Sidebar_ to show the properties and scripts for the item you selected. You can switch back to the Project's properties by clicking outside of a scene.
+Cliquer sur une scène, un acteur ou un déclencheur mettra à jour la _Barre latérale de l’éditeur_ afin d’afficher les propriétés et les scripts de l’élément sélectionné. Vous pouvez revenir aux propriétés du projet en cliquant en dehors d’une scène.
 
 :::tip
-If you hold `Shift` while clicking on scenes you can add and remove them from your selection. This allows you to drag multiple scenes together or right click to delete multiple at once. You can also hold `Shift` while dragging to create a box selection.
+En maintenant la touche `Maj` enfoncée pendant que vous cliquez sur des scènes, vous pouvez les ajouter ou les retirer à votre sélection. Cela vous permet de déplacer plusieurs scènes en même temps ou de faire un clic droit pour les supprimer toutes d’un coup. Vous pouvez également maintenir `Maj` enfoncé tout en traçant un rectangle pour effectuer une sélection multiple.
 
 <img title="Scene box selection" src="/img/screenshots/multi-select.gif" width="320" className="drop-shadow" />
 
 :::
 
-### Add tool
+### Outil d’ajout
 
-You are given the choice of adding a new Actor, Trigger or Scene. After clicking any of the 3 options, your mouse cursor will be loaded with a new item. You can place the new item by clicking inside the Project Editor, and cancel the action by pressing Escape or selecting another tool from _Editor Tools_.
+Vous pouvez ajouter un nouvel Acteur, un Déclencheur ou une Scène. Après avoir cliqué sur l’un de ces options, votre curseur vous servira à placer le nouvel objet. Cliquez dans l’Éditeur de projet pour le positionner, ou appuyez sur Échap pour annuler, ou encore sélectionnez un autre outil depuis les _Outils de l’éditeur_.
 
-### Erase tool
+### Outil Gomme
 
-All collisions, actors, and triggers will be removed when clicked. Erase actions can be undone by pressing `Ctrl / Cmd` + `Z`.
+Tous les éléments tels que les collisions, acteurs et déclencheurs seront supprimés lorsque vous cliquez dessus. Les actions d’effacement peuvent être annulées en appuyant sur les touches `Ctrl / Cmd` + `Z`.
 
-Scenes are not affected by _Erase mode_. To delete a scene either:
-- Select the scene _Select mode_ then in the _Editor Sidebar_ click the down arrow at the top and choose the "Delete Scene" menu item.
-- Select the scene and press the `Backspace` key on your keyboard.
-- Right click on the scene and click "Delete Scene" from the menu.
+Les scènes ne sont pas affectées par le mode _Gomme_. Vous pouvez supprimer une scène, de l’une de ces manières :
 
-### Collision tool
+- Sélectionnez la scène en mode _Sélection_, puis dans la _Barre latérale de l’éditeur_, cliquez sur la flèche vers le bas en haut et cliquez sur "Supprimer la scène" dans le menu.
+- Sélectionnez la scène et appuyez sur la touche `Retour arrière` de votre clavier.
+- Faites un clic droit sur la scène et cliquez sur "Supprimer la scène" dans le menu.
 
-Allows you to [add collisions](/docs/project-editor/scenes#adding-collision-to-a-scene) to any type of scene using GB Studio's _Drawing mode_.
+### Outil de collision
 
-### Colorize tool
+Permet [d’ajouter des collisions](/docs/project-editor/scenes#adding-collision-to-a-scene) à n’importe quel type de scène en utilisant le mode _Dessin_ de GB Studio.
 
-Allows you to [paint tiles](/docs/project-editor/scenes#colorizing-a-scene) in your scene with with up to 8 color palettes per scene. The _Colorize tool_ also uses GB Studio's _Drawing mode_. The palettes used here are determined in the _Palette_ tab in the _Project Editor_.
+### Outil de colorisation
 
-See the documentation on [Keyboard Shortcuts](/docs/getting-started/keyboard-shortcuts) for editor tool shortcuts.
+Permet de [peindre les tuiles](/docs/project-editor/scenes#colorizing-a-scene) de votre scène avec jusqu’à 8 palettes de couleurs différentes par scène. _L’outil de colorisation_ utilise également le mode _Dessin_ de GB Studio. Les palettes utilisées ici sont définies dans l’onglet _Palette_ de l’_Éditeur de projet_.
 
-## Project Views
+Consultez la page sur les [Raccourcis clavier](/docs/getting-started/keyboard-shortcuts) pour connaître les raccourcis associés aux outils de l’éditeur.
 
-Using the _Project View Button_ you can switch between different views of your project and its assets.
+## Vues du projet
 
-<img title="Scene box selection" src="/img/screenshots/project-view-btn.gif" width="320" className="drop-shadow" />
+Le _Bouton de vue du projet_ vous permet de basculer entre différentes vues de votre projet et de ses ressources.
 
-- **Game World:** Create your game by combining [scenes](/docs/project-editor/scenes), [actors](/docs/project-editor/actors) and [triggers](/docs/project-editor/triggers).
+<img title="Bouton de vue du projet" src="/img/screenshots/project-view-btn.gif" width="320" className="drop-shadow" />
 
-- **Sprites:** Edit your [sprites](/docs/assets/sprites) and [create animations](/docs/assets/sprites#sprite-editor).
+- **Monde du jeu :** Créez votre jeu en combinant des [scènes](/docs/project-editor/scenes), des [acteurs](/docs/project-editor/actors) et des [déclencheurs](/docs/project-editor/triggers).
 
-- **Images:** Preview your [background](/docs/assets/backgrounds) and [tileset](/docs/assets/tilesets) assets.
+- **Sprites :** Modifiez vos [sprites](/docs/assets/sprites) et créez des [animations](/docs/assets/sprites#sprite-editor).  
 
-- **Music:** Preview and edit your [music](/docs/assets/music) files.
+- **Images :** Prévisualisez vos [arrières-plans](/docs/assets/backgrounds) et vos [jeux de tuiles](/docs/assets/tilesets).  
 
-- **Palettes:** Edit your palettes for color games.
+- **Musique :** Écoutez et modifiez vos fichiers [musicaux](/docs/assets/music).
 
-- **Dialogue Review:** Preview and edit all the text in your game.
+- **Palettes :** Éditez vos palettes de couleurs pour les jeux en couleur.
 
-- **Settings:** Change your [project's settings](/docs/settings) such as default sprites, color palettes and keyboard controls.
+- **Dialogues :** Consultez et modifiez tous les textes de votre jeu.
 
-See the documentation on [Assets](/docs/assets) for more information on how to add new assets.
+- **Paramètres :** Modifiez les [paramètres du projet](/docs/settings), comme les sprites par défaut, les palettes de couleurs ou les contrôles clavier.
+
+Consultez la section sur les [Ressources](/docs/assets) pour plus d’informations sur l’ajout de nouveaux éléments à votre projet.
